@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb://127.0.0.1:27017/auth_app")
+mongoose.connect("mongodb://127.0.0.1:27017/todo-app")
 
 
 const todoModel = mongoose.Schema({
@@ -12,3 +12,4 @@ const todoModel = mongoose.Schema({
 })
 
 module.exports = mongoose.model("user", todoModel)
+
